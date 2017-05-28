@@ -1,0 +1,23 @@
+server:
+  port: 8081
+helloservice:
+  message: '{cipher}963f38087464781dcf50bfe6bd8a34769f2a63d338e5416985cd43cf375ccbac'
+  config:
+    changeMe: Schönen Tag
+management:
+  security:
+    enabled: false
+netflix:
+  atlas:
+    uri: http://localhost:7101/api/v1/publish/
+
+---
+spring:
+  profiles: hello1
+server:
+  port: 8081
+---
+spring:
+  profiles: hello2
+server:
+  port: 8082

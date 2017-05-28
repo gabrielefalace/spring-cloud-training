@@ -1,0 +1,11 @@
+feign:
+  hystrix:
+    enabled: true
+management:
+  security:
+    enabled: false
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    hello-restservice: /hello/**
